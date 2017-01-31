@@ -12,6 +12,11 @@
 		80F3B00A1E3FB58100FA6840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F3B0081E3FB58100FA6840 /* Main.storyboard */; };
 		80F3B00C1E3FB58100FA6840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F3B00B1E3FB58100FA6840 /* Assets.xcassets */; };
 		80F3B00F1E3FB58100FA6840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F3B00D1E3FB58100FA6840 /* LaunchScreen.storyboard */; };
+		80F3B0171E3FB7B200FA6840 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3B0161E3FB7B200FA6840 /* ShowViewController.swift */; };
+		80F3B0191E3FB7C100FA6840 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3B0181E3FB7C100FA6840 /* PostViewController.swift */; };
+		80F3B01B1E3FBA8900FA6840 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3B01A1E3FBA8900FA6840 /* ListViewController.swift */; };
+		80F3B01E1E40446C00FA6840 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F3B01C1E40446C00FA6840 /* PostTableViewCell.swift */; };
+		80F3B01F1E40446C00FA6840 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80F3B01D1E40446C00FA6840 /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		80F3B00B1E3FB58100FA6840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80F3B00E1E3FB58100FA6840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80F3B0101E3FB58100FA6840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F3B0161E3FB7B200FA6840 /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		80F3B0181E3FB7C100FA6840 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		80F3B01A1E3FBA8900FA6840 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		80F3B01C1E40446C00FA6840 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		80F3B01D1E40446C00FA6840 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,12 @@
 			children = (
 				80F3B0041E3FB58100FA6840 /* AppDelegate.swift */,
 				80F3B0061E3FB58100FA6840 /* ViewController.swift */,
+				80F3B0161E3FB7B200FA6840 /* ShowViewController.swift */,
+				80F3B0181E3FB7C100FA6840 /* PostViewController.swift */,
 				80F3B0081E3FB58100FA6840 /* Main.storyboard */,
+				80F3B01C1E40446C00FA6840 /* PostTableViewCell.swift */,
+				80F3B01D1E40446C00FA6840 /* PostTableViewCell.xib */,
+				80F3B01A1E3FBA8900FA6840 /* ListViewController.swift */,
 				80F3B00B1E3FB58100FA6840 /* Assets.xcassets */,
 				80F3B00D1E3FB58100FA6840 /* LaunchScreen.storyboard */,
 				80F3B0101E3FB58100FA6840 /* Info.plist */,
@@ -126,6 +141,7 @@
 				80F3B00F1E3FB58100FA6840 /* LaunchScreen.storyboard in Resources */,
 				80F3B00C1E3FB58100FA6840 /* Assets.xcassets in Resources */,
 				80F3B00A1E3FB58100FA6840 /* Main.storyboard in Resources */,
+				80F3B01F1E40446C00FA6840 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F3B0191E3FB7C100FA6840 /* PostViewController.swift in Sources */,
 				80F3B0071E3FB58100FA6840 /* ViewController.swift in Sources */,
 				80F3B0051E3FB58100FA6840 /* AppDelegate.swift in Sources */,
+				80F3B01B1E3FBA8900FA6840 /* ListViewController.swift in Sources */,
+				80F3B0171E3FB7B200FA6840 /* ShowViewController.swift in Sources */,
+				80F3B01E1E40446C00FA6840 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +317,7 @@
 				80F3B0151E3FB58100FA6840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
