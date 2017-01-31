@@ -39,23 +39,14 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        // Auto Layoutを使ってセルの高さを動的に変更する
         return UITableViewAutomaticDimension
     }
 
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextViewController: ShowViewController = self.storyboard?.instantiateViewController(withIdentifier: "Show") as! ShowViewController
+        //nextViewController.post =  postData
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
-    */
 
 }

@@ -9,27 +9,30 @@
 import UIKit
 
 class PostViewController: UIViewController {
-
+    @IBOutlet weak var shopnameTextField: UITextField!
+    @IBOutlet weak var reviewTextView: UITextView!
+    @IBOutlet weak var openTextField: UITextField!
+    @IBOutlet weak var closeTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var telTextField: UITextField!
+    
+    @IBOutlet weak var drinkLabel: UILabel!
+    
+    @IBOutlet weak var imageView1: UIImageView!
+    @IBOutlet weak var imageView2: UIImageView!
+    @IBOutlet weak var imageView3: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+//        // 枠のカラー
+//        reviewTextView.layer.borderColor = UIColor.lightGray.cgColor
+//        // 枠の幅
+//        reviewTextView.layer.borderWidth = 1.0
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -64,19 +64,43 @@
 		80F3B0031E3FB58100FA6840 /* Drink */ = {
 			isa = PBXGroup;
 			children = (
+				80F3B0241E40840000FA6840 /* Controller */,
+				80F3B0231E4083E900FA6840 /* View */,
+				80F3B0221E4083C700FA6840 /* Layout */,
 				80F3B0041E3FB58100FA6840 /* AppDelegate.swift */,
-				80F3B0061E3FB58100FA6840 /* ViewController.swift */,
-				80F3B0161E3FB7B200FA6840 /* ShowViewController.swift */,
-				80F3B0181E3FB7C100FA6840 /* PostViewController.swift */,
-				80F3B0081E3FB58100FA6840 /* Main.storyboard */,
-				80F3B01C1E40446C00FA6840 /* PostTableViewCell.swift */,
-				80F3B01D1E40446C00FA6840 /* PostTableViewCell.xib */,
-				80F3B01A1E3FBA8900FA6840 /* ListViewController.swift */,
 				80F3B00B1E3FB58100FA6840 /* Assets.xcassets */,
-				80F3B00D1E3FB58100FA6840 /* LaunchScreen.storyboard */,
 				80F3B0101E3FB58100FA6840 /* Info.plist */,
 			);
 			path = Drink;
+			sourceTree = "<group>";
+		};
+		80F3B0221E4083C700FA6840 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				80F3B00D1E3FB58100FA6840 /* LaunchScreen.storyboard */,
+				80F3B0081E3FB58100FA6840 /* Main.storyboard */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		80F3B0231E4083E900FA6840 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80F3B01C1E40446C00FA6840 /* PostTableViewCell.swift */,
+				80F3B01D1E40446C00FA6840 /* PostTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		80F3B0241E40840000FA6840 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80F3B0061E3FB58100FA6840 /* ViewController.swift */,
+				80F3B0161E3FB7B200FA6840 /* ShowViewController.swift */,
+				80F3B0181E3FB7C100FA6840 /* PostViewController.swift */,
+				80F3B01A1E3FBA8900FA6840 /* ListViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
