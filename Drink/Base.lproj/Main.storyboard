@@ -214,6 +214,17 @@
                             <constraint firstAttribute="trailing" secondItem="T0E-Ta-NEM" secondAttribute="trailing" constant="15" id="zjd-U3-YlU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="4RD-tu-9nY" id="AOV-g5-sQj"/>
+                        <outlet property="closeLabel" destination="wkl-78-Div" id="MdW-Cb-f0V"/>
+                        <outlet property="mainimageView" destination="ihC-ih-wB0" id="Ubf-Tt-EtB"/>
+                        <outlet property="openLabel" destination="jB7-32-svL" id="9z9-8m-WbC"/>
+                        <outlet property="reviewTextView" destination="T0E-Ta-NEM" id="aRo-Nd-ACZ"/>
+                        <outlet property="shopnameLabel" destination="axV-Kh-TWg" id="SiD-mE-Njt"/>
+                        <outlet property="subimageView1" destination="wea-dJ-Ggw" id="Y6E-Vk-swn"/>
+                        <outlet property="subimageView2" destination="DKX-l2-7hm" id="cGP-da-mgn"/>
+                        <outlet property="tellLabel" destination="Td0-SO-Mfz" id="H32-DF-Aeo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lb6-c4-pHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,7 +235,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2cv-Pd-wIf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wuu-K5-I1g">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wuu-K5-I1g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -436,15 +447,22 @@
                         <outlet property="openTextField" destination="rXK-8b-1fb" id="bQw-B9-a7c"/>
                         <outlet property="reviewTextView" destination="kQ6-MD-rTo" id="6tD-NX-OeQ"/>
                         <outlet property="shopnameTextField" destination="4tW-Wg-j7Q" id="iXF-L6-t0Y"/>
+                        <outlet property="swich" destination="0vQ-3n-3C4" id="yBP-tk-Wno"/>
                         <outlet property="telTextField" destination="7g3-bw-k1h" id="YCL-ph-8vF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7d-mX-MPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <barButtonItem systemItem="done" id="Yrc-8J-TYl">
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="edit:" destination="XDl-Ll-kKr" id="JuY-ee-OrG"/>
+                    </connections>
                 </barButtonItem>
                 <barButtonItem systemItem="camera" id="gZ2-H6-QC9">
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="camera:" destination="XDl-Ll-kKr" id="7O5-00-3gn"/>
+                    </connections>
                 </barButtonItem>
             </objects>
             <point key="canvasLocation" x="1861.5999999999999" y="1291.304347826087"/>

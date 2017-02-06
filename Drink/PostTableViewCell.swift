@@ -25,5 +25,16 @@ class PostTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setupdata(store:Store){
+        self.shopnameLabel.text = store.shopname
+        self.timeLabel.text = store.open
         
+        if let image = store.mainimage{
+            let img = UIImage(data: store.mainimage as! Data)
+            self.postImageView.image = img
+        }
+
+    }
+    
 }

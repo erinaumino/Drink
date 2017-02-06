@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var tableView:UITableView!
+    
+    let realm = try! Realm()
+    let storeArray = try! Realm().objects(Store.self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +34,12 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return storeArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as! PostTableViewCell
+        cell.setupdata(store: storeArray[indexPath.row])
         return cell
     }
     
@@ -45,8 +50,15 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextViewController: ShowViewController = self.storyboard?.instantiateViewController(withIdentifier: "Show") as! ShowViewController
-        //nextViewController.post =  postData
+        
+        // 配列からタップされたインデックスのデータを取り出す
+        let touchData = storeArray[indexPath.row]
+        nextViewController.touch =  touchData
+        
         self.navigationController?.pushViewController(nextViewController, animated: true)
+
+        self.tableView.reloadData()
+
     }
 
 }
