@@ -52,7 +52,15 @@ class ShowViewController: UIViewController {
         }
         
         if touch?.alcohol == true{
+            var fukidashi = UIImageView(frame:CGRect(x:10, y:200, width:100, height:50))
+            //fukidashi = UIImageView()
+            let myImage = UIImage(named: "fukidashi.png")
+            fukidashi.image = myImage
+            //fukidashi.layer.position = CGPoint(x: 5, y: 150)
+            fukidashi.contentMode = UIViewContentMode.scaleAspectFit
+            fukidashi.clipsToBounds = true
             
+            self.view.addSubview(fukidashi)
         }
         
 

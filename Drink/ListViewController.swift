@@ -54,7 +54,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         // 配列からタップされたインデックスのデータを取り出す
         let touchData = storeArray[indexPath.row]
         nextViewController.touch =  touchData
-        
+
         self.navigationController?.pushViewController(nextViewController, animated: true)
 
         self.tableView.reloadData()
