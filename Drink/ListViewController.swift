@@ -60,5 +60,21 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.reloadData()
 
     }
+    
+    // セルが削除が可能なことを伝えるメソッド
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath)-> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle.delete
+    }
+    
+    // Delete ボタンが押された時に呼ばれるメソッド
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            // データベースから削除する  // ←以降追加する
+            try! realm.write {
+                self.realm.delete(self.storeArray[indexPath.row])
+                tableView.deleteRows(at: [indexPath as IndexPath], with: UITableViewRowAnimation.fade)
+            }
+        }
+    }
 
 }

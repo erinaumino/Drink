@@ -35,6 +35,7 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.automaticallyAdjustsScrollViewInsets = false
                 
         self.navigationItem.setRightBarButtonItems([doneButton, cameraButton], animated: true)
         

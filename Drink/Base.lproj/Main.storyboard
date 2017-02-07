@@ -53,7 +53,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3Dg-dM-SNT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0Qp-B2-JZY"/>
                             <constraint firstAttribute="trailing" secondItem="m2H-Rq-oLC" secondAttribute="trailing" constant="20" id="BJn-MM-IHA"/>
@@ -83,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_3821" translatesAutoresizingMaskIntoConstraints="NO" id="ihC-ih-wB0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage_2" translatesAutoresizingMaskIntoConstraints="NO" id="ihC-ih-wB0">
                                 <rect key="frame" x="0.0" y="20" width="375" height="280"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ic-cg-qqs">
@@ -177,7 +176,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jB7-32-svL" firstAttribute="leading" secondItem="QJ1-hs-Zkw" secondAttribute="trailing" constant="-2" id="4jr-lP-Xmf"/>
                             <constraint firstItem="T0E-Ta-NEM" firstAttribute="leading" secondItem="B6i-DB-ZWt" secondAttribute="leading" constant="15" id="4zO-Mu-DTH"/>
@@ -245,9 +244,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2cv-Pd-wIf" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wuu-K5-I1g">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wuu-K5-I1g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -481,7 +482,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_3821" width="1478" height="1108"/>
+        <image name="noimage_2" width="752" height="564"/>
         <image name="pin" width="43" height="63"/>
         <image name="tel" width="37" height="52"/>
     </resources>
