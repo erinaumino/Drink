@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SVProgressHUD
 
 class PostViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,AdobeUXImageEditorViewControllerDelegate{
     
@@ -51,6 +52,7 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate,UINav
     }
 
     @IBAction func edit(_ sender: Any) {
+
         try! realm.write {
             self.store.shopname = self.shopnameTextField.text!
             self.store.review = self.reviewTextView.text
@@ -79,8 +81,9 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate,UINav
             self.realm.add(self.store, update: true)
 
         }
-        
-         navigationController?.popViewController(animated: true)
+        // HUDで投稿完了を表示する
+        SVProgressHUD.showSuccess(withStatus: "投稿しました")
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func camera(_ sender: Any) {

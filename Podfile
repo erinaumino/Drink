@@ -6,6 +6,7 @@ target 'Drink' do
   use_frameworks!
 
   pod 'RealmSwift', '2.1.2'
+  pod 'SVProgressHUD'
 
   # Pods for Drink
 

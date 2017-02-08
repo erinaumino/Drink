@@ -18,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         AdobeUXAuthManager.shared().setAuthenticationParametersWithClientID("8b7a58420fc74da6b1a4e2dc3c1a1e2e", withClientSecret: "8b7a58420fc74da6b1a4e2dc3c1a1e2e")
+        
+        /* アイテムの色変更 */
+        UINavigationBar.appearance().tintColor = UIColor.white
+        /* タイトルの色変更 */
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
 
         return true
     }
