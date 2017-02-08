@@ -31,7 +31,7 @@ class PostTableViewCell: UITableViewCell {
         self.timeLabel.text = store.open
         
         if let image = store.mainimage{
-            let img = UIImage(data: store.mainimage as! Data)
+            let img = UIImage(data: store.mainimage! as Data)
             self.postImageView.image = img
         }
 

@@ -32,16 +32,16 @@ class Store: Object {
     dynamic var tel = ""
     
     // メイン画像
-    dynamic var mainimage:NSData? = nil
+    dynamic var mainimage:Data? = nil
     
     // サブ画像1
-    dynamic var subimage1:NSData? = nil
+    dynamic var subimage1:Data? = nil
     
     // サブ画像2
-    dynamic var subimage2:NSData? = nil
+    dynamic var subimage2:Data? = nil
     
     //飲み放題
-    dynamic var alcohol:Bool = false
+    dynamic var canDrinkEndless:Bool = false
     
     
     /**

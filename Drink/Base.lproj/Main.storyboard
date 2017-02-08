@@ -116,14 +116,14 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td0-SO-Mfz">
-                                <rect key="frame" x="38" y="632" width="321" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="38" y="634" width="321" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RD-tu-9nY">
-                                <rect key="frame" x="38" y="602" width="321" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="38" y="604" width="321" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -141,7 +141,7 @@
                                 <rect key="frame" x="15" y="396.5" width="165" height="140.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DKX-l2-7hm">
-                                <rect key="frame" x="195" y="397" width="165" height="141"/>
+                                <rect key="frame" x="195" y="396.5" width="165" height="140.5"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="ggM-Gz-RIu">
                                 <rect key="frame" x="15" y="602" width="20" height="20"/>
@@ -220,6 +220,7 @@
                             <constraint firstItem="DKX-l2-7hm" firstAttribute="top" secondItem="T0E-Ta-NEM" secondAttribute="bottom" constant="15" id="wyu-XL-1yH"/>
                             <constraint firstItem="ofd-7c-n0r" firstAttribute="top" secondItem="ihC-ih-wB0" secondAttribute="bottom" constant="367" id="yZE-zD-SaU"/>
                             <constraint firstItem="ihC-ih-wB0" firstAttribute="top" secondItem="EBj-4H-mFD" secondAttribute="bottom" id="yZl-Vy-Yza"/>
+                            <constraint firstItem="tLr-Y5-a4I" firstAttribute="top" secondItem="DKX-l2-7hm" secondAttribute="bottom" constant="15" id="zXv-Hl-ne7"/>
                             <constraint firstAttribute="trailing" secondItem="T0E-Ta-NEM" secondAttribute="trailing" constant="15" id="zjd-U3-YlU"/>
                         </constraints>
                     </view>

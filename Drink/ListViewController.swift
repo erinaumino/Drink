@@ -17,7 +17,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     let storeArray = try! Realm().objects(Store.self)
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+//        super.viewDidLoad()
+//        
+//        storeArray.addNotificationBlock { [weak self] _ in
+//            self?.tableView.reloadData()
+//        }
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -29,6 +33,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tableView.reloadData()
     }
 
@@ -60,8 +65,6 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         nextViewController.touch =  touchData
 
         self.navigationController?.pushViewController(nextViewController, animated: true)
-
-        self.tableView.reloadData()
 
     }
     

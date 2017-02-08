@@ -63,19 +63,19 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate,UINav
             
             if let img = self.imageView1.image{
                 let image = UIImagePNGRepresentation(imageView1.image!)
-                self.store.mainimage = image as NSData?
+                self.store.mainimage = image as Data?
             }
             if let img1 = self.imageView2.image{
                 let image1 = UIImagePNGRepresentation(imageView2.image!)
-                self.store.subimage1 = image1 as NSData?
+                self.store.subimage1 = image1 as Data?
             }
             if let img2 = self.imageView3.image{
                 let image2 = UIImagePNGRepresentation(imageView3.image!)
-                self.store.subimage2 = image2 as NSData?
+                self.store.subimage2 = image2 as Data?
             }
             
             if swich.isOn == true{
-                self.store.alcohol = true
+                self.store.canDrinkEndless = true
             }
             
             self.realm.add(self.store, update: true)
@@ -83,7 +83,7 @@ class PostViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         }
         // HUDで投稿完了を表示する
         SVProgressHUD.showSuccess(withStatus: "投稿しました")
-        navigationController?.popViewController(animated: true)
+        _=navigationController?.popViewController(animated: true)
     }
     
     @IBAction func camera(_ sender: Any) {

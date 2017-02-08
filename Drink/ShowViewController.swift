@@ -1,3 +1,4 @@
+
 //
 //  ShowViewController.swift
 //  Drink
@@ -40,24 +41,22 @@ class ShowViewController: UIViewController {
         self.tellLabel.text = touch?.tel
         
         if let image = touch?.mainimage{
-            let img = UIImage(data: touch?.mainimage as! Data)
+            let img = UIImage(data: (touch?.mainimage)! as Data)
             self.mainimageView.image = img
         }
         if let image1 = touch?.subimage1{
-            let img1 = UIImage(data: touch?.subimage1 as! Data)
+            let img1 = UIImage(data: (touch?.subimage1)! as Data)
             self.subimageView1.image = img1
         }
         if let image2 = touch?.subimage2{
-            let img2 = UIImage(data: touch?.subimage2 as! Data)
-            self.subimageView1.image = img2
+            let img2 = UIImage(data: (touch?.subimage2)! as Data)
+            self.subimageView2.image = img2
         }
         
-        if touch?.alcohol == true{
+        if touch?.canDrinkEndless == true{
             var fukidashi = UIImageView(frame:CGRect(x:10, y:200, width:100, height:50))
-            //fukidashi = UIImageView()
             let myImage = UIImage(named: "fukidashi.png")
             fukidashi.image = myImage
-            //fukidashi.layer.position = CGPoint(x: 5, y: 150)
             fukidashi.contentMode = UIViewContentMode.scaleAspectFit
             fukidashi.clipsToBounds = true
             
